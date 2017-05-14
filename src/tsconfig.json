@@ -4,15 +4,33 @@
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": ["es6", "dom"],
+    "lib": [
+      "es6",
+      "dom"
+    ],
     "mapRoot": "./",
     "module": "es6",
     "moduleResolution": "node",
     "outDir": "../dist/out-tsc",
     "sourceMap": true,
     "target": "es5",
+    "outFile": "compiled.js",
     "typeRoots": [
       "../node_modules/@types"
+    ],
+    "compileOnSave": true,
+    "exclude": [
+      "node_modules/*",
+      "**/*-aot.ts"
+    ],
+    // "files": [
+    //   "main.ts",
+    //   "polyfills.ts",
+    //   "types.ts",
+    //   "scanner.ts"
+    // ]
+    "include": [
+      "../src/**/*"
     ]
   }
 }
